@@ -1,0 +1,15 @@
+# RN8213/RN8211B 电表校准工具 v2.0 依赖包
+# PyQt5 + pyserial + openpyxl 最小依赖
+
+# GUI框架
+PyQt5>=5.15.0
+
+# 串口通信
+pyserial>=3.5
+
+# Excel读写
+openpyxl>=3.1.0
+
+# 可选：开发调试工具
+# pytest>=7.0.0
+# black>=22.0.0
