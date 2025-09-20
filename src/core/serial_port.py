@@ -81,6 +81,11 @@ class SerialPort(QObject):
         self.is_reading = False
         self.read_thread: Optional[threading.Thread] = None
 
+    @property
+    def serial(self) -> Optional[serial.Serial]:
+        """提供对串口连接对象的访问（向后兼容性）"""
+        return self.serial_conn
+
     def get_available_ports(self) -> List[str]:
         """获取可用串口列表"""
         try:
